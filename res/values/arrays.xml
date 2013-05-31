@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="facts">
+        <item>Cats are furry.</item>
+        <item>Cats always land on their feet.</item>
+        <item>The cat\'s scientific name is Felis catus.</item>
+        <item>A LogCat is a cat on a felled tree.</item>
+    </string-array>
+</resources>
