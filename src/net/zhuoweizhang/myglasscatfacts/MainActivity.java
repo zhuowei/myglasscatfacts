@@ -36,8 +36,13 @@ public class MainActivity extends Activity
 		//make an Intent to create a new Mirror API card with MyGlass
 		Intent intent = new Intent(ACTION_INSERT_OR_UPDATE);
 		//populate the card by adding intent extras
+
+		//these extras are based on the representation of a Timeline Card, 
+		//which can be found at the official Mirror API documentations
+		//https://developers.google.com/glass/v1/reference/timeline
+
 		intent.putExtra("timeline_item_local_id", "catfact_1234"); //we only have one item; in a real app this is probably more complicated
-		intent.putExtra("project_id", "12345678"); //replace with a real project id
+		intent.putExtra("project_id", "12345678"); //Glass doesn't verify if this is an actual project, but you should probably use a real ID just to be safe
 		intent.putExtra("token", "12345678");
 		intent.putExtra("package_name", "net.zhuoweizhang.myglasscatfacts");
 		intent.putExtra("timeline_item_text", fact.toString());
